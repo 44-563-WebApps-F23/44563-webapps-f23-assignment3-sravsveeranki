@@ -74,12 +74,12 @@
 <hr>
 <h3>Code Snippet</h3>
 <blockquote>
-    <p>How to Embed flash in html?</p>
-    <p>Source: <a href="https://stackoverflow.com/questions/1333202/embed-flash-in-html" target="_blank">here is the link from Stack Overflow</a></p>
+    <p>How To Set Multiple Files In Html Input By Default?</p>
+    <p>Source: <a href="https://stackoverflow.com/questions/63572978/how-to-set-multiple-files-in-html-input-by-default" target="_blank">Here is the link from Stack Overflow</a></p>
 </blockquote>
 <pre>
-    <object type="application/x-shockwave-flash"> 
-        <param name="movie" value="myclip.swf" /> 
-        <param name="quality" value="high" /> 
-    </object>
+    <form method="post" action="upload.php" enctype="multipart/form-data">
+        <input name='uploads[]' type="file" multiple>
+        <input type="submit" value="Send">
+      </form>
 </pre>
